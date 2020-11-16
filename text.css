@@ -1,0 +1,12 @@
+@import url('https://fonts.google.com/specimen/Lato?query=lato&sidebar.open&selection.family=Lato:ital,wght@1,300');
+@import url('https://fonts.google.com/specimen/Merriweather?query=mer&sidebar.open&selection.family=Merriweather');
+
+.form-post {
+   text-align: center; 
+   position: fixed;
+
+}
+.form {
+   align-items: center;
+   text-align: center;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.google.com/specimen/Lato?query=lato&sidebar.open&selection.family=Lato:ital,wght@1,300');
+@import url('https://fonts.google.com/specimen/Merriweather?query=mer&sidebar.open&selection.family=Merriweather');
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* laddningssida*/ 
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  border-style: solid;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1rem;
+  grid-template-areas:  
+  '. . . . . . . . .'
+  '. a a . . c c c .'
+  '. a a . . c c c .'
+  '. a a . . c c c .'
+  '. . . . . c c c .'
+  '. . b b . c c c .'
+  '. . b b . . . . .'
+  '. . b b . . . . .'
+  '. . . . . . . . .';
+  
+}
+@media(max-width:768px){
+.wrapper {
+ 
+  grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas:  
+  'a'
+  'b'
+  'c';
+  display: flex;
+ justify-content: space-between;
+}
+}
+.one {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-style: solid;
+  border-color: #464647;
+  background-color: d#464647;
+ grid-area: a;
+}
+
+.three {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-style: solid;
+  border-color: #464647;
+  background-color: #ffffff;
+ grid-area: b;
+}
+
+.five {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-color: #464647;
+  background-color: d#464647;
+ grid-area: c;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.kampanj {
+  text-align: center;
+  color: red;
+}
